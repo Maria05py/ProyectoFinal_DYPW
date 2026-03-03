@@ -5,7 +5,7 @@ Proyecto final de la materia Diseño Y Programación Web. Curso Lectivo C1-2026.
 
 ## Integrantes
 - María Jesús Rodriguez Molina – Diseño UX/UI
-- Sebastián – Análisis de requerimientos
+- Sebastián Salas Hernández– Análisis de requerimientos
 - Thais Hernández Quesada– Documentación y modelado
 
 ## Descripción del Proyecto
