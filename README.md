@@ -26,6 +26,8 @@ ChefPad conecta chefs expertos y usuarios regulares en un entorno colaborativo e
 ---
 
 ## Alcance
+ChefPad es una plataforma web colaborativa orientada a la gestión y descubrimiento de recetas culinarias. El sistema contempla dos tipos de usuarios: Chef o experto culinario y Usuario regular.
+El proyecto incluye funcionalidades como búsqueda avanzada por ingredientes, creación y edición de recetas, generación de versiones derivadas, validación de recetas de la comunidad y planificación semanal de comidas con cálculo de presupuesto con el fin de crear una plataforma completa.
 
 El proyecto contempla dos tipos de usuarios:
 
