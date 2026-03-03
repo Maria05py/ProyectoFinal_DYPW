@@ -4,9 +4,9 @@ Proyecto final de la materia Diseño Y Programación Web. Curso Lectivo C1-2026.
 # ChefPad
 
 ## Integrantes
-- María Jesús Rodriguez Molina – Diseño UX/UI
+- María Jesús Rodriguez Molina – Documentación y modelado 
 - Sebastián Salas Hernández– Análisis de requerimientos
-- Thais Hernández Quesada– Documentación y modelado
+- Thais Hernández Quesada– Diseño UX/UI
 
 ## Descripción del Proyecto
 
