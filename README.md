@@ -58,12 +58,11 @@ El proyecto contempla dos tipos de usuarios:
 
 ## Estructura de Navegación
 
-El sistema se organiza mediante un menú superior principal:
-
-- Inicio
-- Recetas
-- Planificador
-- Comunidad
+El landing de usuario se organiza mediante un menú superior principal:
+-Inicio
+-Recetas
+-Blog
+-Galeria
 
 Desde el buscador se accede a la vista detallada de receta.
 Desde el panel del chef se accede a creación y validación.
