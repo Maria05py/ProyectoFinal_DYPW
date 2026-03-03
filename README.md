@@ -6,7 +6,7 @@ Proyecto final de la materia Diseño Y Programación Web. Curso Lectivo C1-2026.
 ## Integrantes
 - María Jesús Rodriguez Molina – Diseño UX/UI
 - Sebastián – Análisis de requerimientos
-- Nombre 3 – Documentación y modelado
+- Thais Hernández Quesada– Documentación y modelado
 
 ## Descripción del Proyecto
 
@@ -75,10 +75,9 @@ Las pantallas mantienen una jerarquía clara entre navegación principal y accio
 
 Se recomienda:
 
-- main → versión estable
-- develop → integración de cambios
-- feature-wireframes → desarrollo de maquetación
-- feature-readme → documentación
+- main: versión estable
+- develop: integración de cambios
+
 
 Commits descriptivos:
 - feat: diseño buscador avanzado
