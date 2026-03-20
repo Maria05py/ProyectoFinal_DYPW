@@ -1,0 +1,218 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    padding: 30px 0px 30px 10px;
+}
+
+/* esto es del header */
+.navbar {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 40px;
+
+}
+
+.menu {
+    display: flex;
+    margin-left: 800px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+.menu a {
+    color: #63605B;
+    text-decoration: none
+}
+
+.nav-icons {
+    margin-right: 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+
+.logo {
+    width: 30%;
+    border-radius: 75px;
+}
+
+
+
+/* aqui termina el header */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/banner.jpg');
+    min-height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.banner h1 {
+    color: white;
+    font-size: 64px;
+}
+
+.banner p {
+    color: white;
+    font-size: 36px;
+    margin-top: -15px;
+}
+
+.boton {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #F79448;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.centrar {
+    text-align: center;
+}
+
+/* .div-sobre-nosotros img{
+    max-width: 100px;
+} */
+.div-sobre-nosotros {
+    margin-top: 60px;
+
+}
+
+.h2-landing {
+    font-family: Verdana, Jaldi, Tahoma, sans-serif
+}
+
+.nosotros-fila {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.nosotros-col {
+    flex: 1;
+    max-width: 600px;
+}
+
+.nosotros-col img {
+    /* width: 100%; */
+    max-width: 340;
+    border-radius: 60px;
+    margin-left: 100px;
+}
+
+.nosotros-card {
+    width: 100%;
+    background: #F7F7F7;
+    border-radius: 30px;
+    /* max-width: 650px; */
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nosotros-card h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+
+.nosotros-card p {
+    font-size: larger;
+    justify-content: justify;
+    text-align: left;
+}
+.div-galeria{
+    margin-top:150px;
+}
+
+.fila {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.columna{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.columna p{
+    margin-bottom: 20px ;
+    margin-top: 20px;
+    font-size: 17px;
+
+}
+.galeria-card {
+    width: 90%;
+    background: #F7F7F7;
+    border-radius: 30px;
+    /* max-width: 650px; */
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.galeria-card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.galeria-card h2{
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+
+/* tipografia */
+.jaldi-regular {
+    font-family: "Jaldi", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.jaldi-bold {
+    font-family: "Jaldi", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #63605B;
+}
+
+.kantumruy-pro {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
