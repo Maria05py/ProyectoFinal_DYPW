@@ -6,20 +6,21 @@ header {
     padding: 30px 0px 30px 10px;
 }
 
+/* esto es del header */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    /* flex-direction: column; */
+    gap: 40px;
+
 }
 
 .menu {
     display: flex;
-    margin: 0;
-    /* Eliminado el 800px conflictivo */
+    margin-left: 800px;
     justify-content: center;
     align-items: center;
     font-size: 22px;
+
 }
 
 .menu a {
@@ -43,10 +44,13 @@ ul {
 }
 
 .logo {
-    width: 30%;
+    width: 90px;
     border-radius: 75px;
 }
 
+
+
+/* aqui termina el header */
 * {
     margin: 0px;
     padding: 0px;
@@ -94,8 +98,9 @@ ul {
     text-align: center;
 }
 
-
-
+/* .div-sobre-nosotros img{
+    max-width: 100px;
+} */
 .div-sobre-nosotros {
     margin-top: 60px;
 
@@ -118,7 +123,8 @@ ul {
 }
 
 .nosotros-col img {
-    max-width: 340px;
+    /* width: 100%; */
+    max-width: 340;
     border-radius: 60px;
     margin-left: 100px;
 }
@@ -127,7 +133,7 @@ ul {
     width: 100%;
     background: #F7F7F7;
     border-radius: 30px;
-    max-width: 650px;
+    /* max-width: 650px; */
     margin: 0 auto;
     padding: 40px 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -436,64 +442,193 @@ ul {
         width: 90%;
     }
 }
+
 /* Chef panel */
-.chef-db{
+.chef-db {
     border-radius: 15px;
     background-color: #FBFBFB;
-    margin: 0;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.div-fila-chef{
+
+.div-fila-chef {
     margin: 50px;
 }
-.fila-chef{
+
+.fila-chef {
     display: flex;
+
+    gap: 80px;
 }
-.columna-chef{
+
+.columna-chef {
     width: 50%;
 }
-.receta{    
+
+.receta {
     display: flex;
     gap: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 25px;
     background: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     margin: 20px;
 }
-.info-receta{
+
+.info-receta {
     display: flex;
     padding: 10px;
 }
-.estrellas{
+
+.estrellas {
     display: flex;
     gap: 10px;
     align-content: center;
 }
-.resenas{
+
+.resenas {
     align-content: center;
 }
-.resenas p{
+
+.resenas p {
     text-align: right;
 }
-.elementos-receta{
+
+.elementos-receta {
     display: flex;
     gap: 15px;
     margin: 5px;
 }
-.elementos-receta p{
+
+.elementos-receta p {
     width: max-content;
 
 }
-.receta img{
+
+.receta img {
     width: 100px;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.texto{
+
+.texto {
     margin-right: 65%;
 }
+
+
+.actividad-reciente-titulo {
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+
+}
+
+.usuario-notificacion-img {
+    max-width: 20px;
+    margin: 8px;
+}
+
+.verificar {
+    border: 1px solid #e0e0e0;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.notificacion-reto {
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.accesos-directos {
+    border: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.titulo-acceso-directo {
+    padding: 20px;
+
+}
+
+.fila-acceso-directo {
+    margin: 20px;
+}
+
+.card-acceso-directo {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    width: 180px;
+    height: 48.8px;
+    padding: 10px;
+    padding: 10px;
+}
+
+.col-acceso-directo {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.gestionar-receta-div {
+    display: flex;
+    justify-content: center;
+}
+
+.validar-receta-icono {
+    margin: 5px;
+}
+
+.crear-icono {
+    width: 27px;
+    background-color: #F79448;
+    border-radius: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.notificacion-reto h3 {
+    color: rgb(250, 143, 62);
+
+}
+
+.chevron {
+    display: flex;
+    align-items: center;
+}
+
+.checked-board {
+    background-color: #FCF0E7;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7px;
+}
+
+.texto-verificar {
+    padding: 0px;
+}
+
 /* Grafico  */
 * {
     box-sizing: border-box;
@@ -504,7 +639,6 @@ ul {
     /* background: #f3f3f3; */
     font-family: Arial, sans-serif;
     color: #5f5b57;
-    padding: 40px;
 }
 
 .chart-card {
