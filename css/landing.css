@@ -94,9 +94,7 @@ ul {
     text-align: center;
 }
 
-.div-sobre-nosotros img {
-    max-width: 100px;
-}
+
 
 .div-sobre-nosotros {
     margin-top: 60px;
@@ -120,7 +118,6 @@ ul {
 }
 
 .nosotros-col img {
-    /* width: 100%; */
     max-width: 340px;
     border-radius: 60px;
     margin-left: 100px;
@@ -438,4 +435,209 @@ ul {
     .footer-divisor {
         width: 90%;
     }
+}
+/* Chef panel */
+.chef-db{
+    border-radius: 15px;
+    background-color: #FBFBFB;
+    margin: 0;
+}
+.div-fila-chef{
+    margin: 50px;
+}
+.fila-chef{
+    display: flex;
+}
+.columna-chef{
+    width: 50%;
+}
+.receta{    
+    display: flex;
+    gap: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    margin: 20px;
+}
+.info-receta{
+    display: flex;
+    padding: 10px;
+}
+.estrellas{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+}
+.resenas{
+    align-content: center;
+}
+.resenas p{
+    text-align: right;
+}
+.elementos-receta{
+    display: flex;
+    gap: 15px;
+    margin: 5px;
+}
+.elementos-receta p{
+    width: max-content;
+
+}
+.receta img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.texto{
+    margin-right: 65%;
+}
+/* Grafico  */
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    /* background: #f3f3f3; */
+    font-family: Arial, sans-serif;
+    color: #5f5b57;
+    padding: 40px;
+}
+
+.chart-card {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f7f7f7;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 28px 28px 20px;
+}
+
+.chart-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 28px;
+    color: #6a635d;
+}
+
+.chart-wrapper {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 300px 40px;
+    gap: 0;
+    align-items: stretch;
+}
+
+.y-axis {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    padding-top: 8px;
+}
+
+.y-label {
+    position: absolute;
+    right: 12px;
+    transform: translateY(50%);
+    font-size: 13px;
+    color: #8d8882;
+}
+
+.y-label.y0 {
+    bottom: 0%;
+}
+
+.y-label.y10 {
+    bottom: 20%;
+}
+
+.y-label.y20 {
+    bottom: 40%;
+}
+
+.y-label.y50 {
+    bottom: 60%;
+}
+
+.y-label.y100 {
+    bottom: 80%;
+}
+
+.plot-area {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px) 0 0 / calc(100% / 6) 100%,
+        linear-gradient(to top, rgba(0, 0, 0, 0.04) 1px, transparent 1px) 0 0 / 100% calc(100% / 5),
+        #f7f7f7;
+}
+
+.area-fill {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(247, 148, 72, 0.45) 0%,
+            rgba(247, 148, 72, 0.18) 45%,
+            rgba(247, 148, 72, 0.04) 100%);
+    clip-path: polygon(0% 82%,
+            14.2% 78%,
+            28.4% 54%,
+            42.6% 39%,
+            56.8% 82%,
+            71% 72%,
+            85.2% 38%,
+            100% 24%,
+            100% 100%,
+            0% 100%);
+}
+
+.line-graph {
+    position: absolute;
+    inset: 0;
+    background: #f3a15e;
+    clip-path: polygon(0% 81.2%,
+            14.2% 77.2%,
+            28.4% 53.2%,
+            42.6% 38.2%,
+            56.8% 81.2%,
+            71% 71.2%,
+            85.2% 37.2%,
+            100% 23.2%,
+            100% 24.6%,
+            85.2% 38.6%,
+            71% 72.6%,
+            56.8% 82.6%,
+            42.6% 39.6%,
+            28.4% 54.6%,
+            14.2% 78.6%,
+            0% 82.6%);
+}
+
+.x-axis {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: end;
+    padding-top: 12px;
+}
+
+.x-axis span {
+    text-align: center;
+    font-size: 14px;
+    color: #8d8882;
+}
+
+.chart-box {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 18px;
+    padding: 20px 18px 12px;
+    background: #f7f7f7;
 }
