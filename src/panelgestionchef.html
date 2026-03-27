@@ -23,21 +23,89 @@
 
             <nav class="menu jaldi-regular">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
                     <li><a href="#">RECETAS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">GALERÍA</a></li>
+                    <li><a href="#">PLANIFICADOR</a></li>
+                    <li><a href="#">COMUNIDAD</a></li>
                 </ul>
             </nav>
 
             <div class="nav-icons">
-                <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: rgb(99, 96, 91);"></i></a>
-                <a href=""> <i class="fa-solid fa-user" style="color: rgb(99, 96, 91);"></i></a>
+                <div class="card-profile-pic">
+                    <div class="div-profile-pic">
+                        <img class="profile-pic" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="">
+                    </div>
+                    <div class="jhon">
+                        <p>Chef Jhon</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right-from-bracket" style="color: rgb(50, 50, 50);"></i>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </header>
     <div class="chef-db">
+        <div class="panel-chef">
+            <h1 class="jaldi-bold">Panel de gestión del chef</h1>
+            <p class="inter">Bienvenida de nuevo, chef Jhon. <br>
+                ¡Aqui tienes un resumen de tus estadisticas y actividad reciente!</p>
+            <h2>Resumen</h2>
+        </div>
+        <div>
+
+            <div class="fila-estadisticas">
+                <div class="columna-estadisticas borde-derecho">
+                    <div class="iconos-estadisticas checked-board">
+                        <i class="fa-solid fa-bowl-food " style="color: rgb(250, 143, 62);"></i>
+                    </div>
+                    <div class="texto-estadisticas">
+                        <h3 class="inter">Recetas publicadas</h3>
+                        <p class="p-numeros inter">24</p>
+                        <p class="inter"><span class="color-naraja">+5</span> esta semana</p>
+                    </div>
+
+                </div>
+                <div class="columna-estadisticas borde-derecho">
+                    <div class="iconos-estadisticas checked-board">
+                        <i class="fa-solid fa-user" style="color: rgb(250, 143, 62);"></i>
+                    </div>
+                    <div class="texto-estadisticas">
+                        <h3 class="inter">Seguidores</h3>
+                        <p class="p-numeros inter">587</p>
+                        <p class="inter"><span class="color-naraja">+25</span> esta semana</p>
+
+                    </div>
+
+                </div>
+                <div class="columna-estadisticas borde-derecho">
+                    <div class="iconos-estadisticas checked-board">
+                        <i class="fa-solid fa-heart" style="color: rgb(250, 143, 62);"></i>
+                    </div>
+                    <div class="texto-estadisticas">
+                        <h3 class="inter">Total de interacciones</h3>
+                        <p class="p-numeros inter">6,230</p>
+                        <p class="inter"><span class="color-naraja">+1503</span> esta semana</p>
+
+
+
+                    </div>
+                </div>
+                <div class="columna-estadisticas">
+                    <div class="iconos-estadisticas checked-board">
+                        <i class="fa-solid fa-download" style="color: rgb(250, 143, 62);"></i>
+                    </div>
+                    <div class="texto-estadisticas">
+                        <h3 class="inter">Descargas de planes</h3>
+                        <p class="p-numeros inter">290</p>
+                        <p class="inter"><span class="color-naraja">+103</span> esta semana</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="chart-card">
             <div class="chart-box">
                 <h2 class="chart-title">Growth</h2>
@@ -321,55 +389,48 @@
                             <h2 class="jaldi-bold titulo-acceso-directo">Acessos directos </h2>
                             <div class="fila-acceso-directo">
                                 <div class="col-acceso-directo">
-                                    <div class="card-acceso-directo">
-                                        <div class="crear-icono"><i class="fa-solid fa-plus"
-                                                style="color: rgb(255, 255, 255);"></i></div>
-                                        <div class="jaldi-bold">Crear nueva receta</div>
-                                    </div>
-                                    <div class="card-acceso-directo">
-                                        <div class="validar-receta-icono">
-                                            <i class="fa-solid fa-clipboard-check fa-lg"
+                                    <div>
+                                        <a href="" class="card-acceso-directo">
+                                            <i class="fa-solid fa-circle-plus validar-receta-icono"
                                                 style="color: rgb(250, 143, 62);"></i>
-                                        </div>
-                                        <div>
-                                            <div class="jaldi-bold">Validar recetas</div>
-                                        </div>
-
+                                            <p class="jaldi-bold">Crear nueva receta</p>
+                                        </a href="">
+                                    </div>
+                                    <div>
+                                        <a href="" class="card-acceso-directo">
+                                            <i class="fa-solid fa-clipboard-check validar-receta-icono"
+                                                style="color: rgb(250, 143, 62);"></i>
+                                            <p class="jaldi-bold">Validar recetas</p>
+                                        </a href="">
                                     </div>
                                 </div>
                                 <div class="col-acceso-directo">
-                                    <div class="card-acceso-directo">
-                                        <div class="validar-receta-icono">
-                                            <i class="fa-solid fa-chart-line" style="color: rgb(250, 143, 62);"></i>
-                                        </div>
-                                        <div>
-                                            <div class="jaldi-bold">Ver estadísticas</div>
-                                        </div>
+                                    <div>
+                                        <a href="#" class="card-acceso-directo">
+                                            <i class="fa-solid fa-chart-line validar-receta-icono"
+                                                style="color: rgb(250, 143, 62);"></i>
+                                            <p class="jaldi-bold">Ver estadísticas</p>
+                                        </a>
                                     </div>
-                                    <div class="card-acceso-directo">
-                                        <div class="validar-receta-icono">
-                                            <i class="fa-solid fa-trophy" style="color: rgb(250, 143, 62);"></i>
-                                        </div>
-                                        <div>
-                                            <div class="jaldi-bold">Retos culinarios</div>
-                                        </div>
+                                    <div>
+                                        <a href="" class="card-acceso-directo">
+                                            <i class="fa-solid fa-trophy validar-receta-icono"
+                                                style="color: rgb(250, 143, 62);"></i>
+                                            <p class="jaldi-bold">Retos culinarios</p>
+                                        </a href="">
                                     </div>
                                 </div>
                             </div>
                             <div class="gestionar-receta-div">
-                                <div class="card-acceso-directo ">
-                                    <div class="validar-receta-icono">
-                                        <i class="fa-regular fa-clipboard" style="color: rgb(250, 143, 62);"></i>
-                                    </div>
-                                    <div>
-                                        <div class="jaldi-bold">Gestionar mis recetas</div>
-                                    </div>
-                                </div>
+                                <a href="" class="card-acceso-directo">
+                                    <i class="fa-regular fa-clipboard validar-receta-icono"
+                                        style="color: rgb(250, 143, 62);"></i>
+                                    <p class="jaldi-bold">Gestionar mis recetas</p>
+                                </a href="">
                             </div>
                         </div>
 
                     </div>
-
                 </div>
 
             </div>

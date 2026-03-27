@@ -462,6 +462,10 @@ ul {
     gap: 80px;
 }
 
+.columna2 {
+    margin-left: 180px;
+}
+
 .columna-chef {
     width: 50%;
 }
@@ -536,6 +540,7 @@ ul {
 }
 
 .verificar {
+    cursor: pointer;
     border: 1px solid #e0e0e0;
     display: flex;
     gap: 10px;
@@ -543,6 +548,7 @@ ul {
 }
 
 .notificacion-reto {
+    cursor: pointer;
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     display: flex;
@@ -567,17 +573,28 @@ ul {
 .fila-acceso-directo {
     margin: 20px;
 }
-
+a{
+    text-decoration: none;
+}
 .card-acceso-directo {
+    cursor: pointer;
+    transition: 0.5s;
     display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
     border: 1px solid #e0e0e0;
     border-radius: 20px;
     width: 180px;
     height: 48.8px;
-    padding: 10px;
-    padding: 10px;
+    padding: 13px 10px 10px 10px;
 }
 
+.card-acceso-directo:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+
+}
 .col-acceso-directo {
     margin-bottom: 20px;
     display: flex;
@@ -629,6 +646,104 @@ ul {
     padding: 0px;
 }
 
+.card-profile-pic {
+    border-radius: 27px;
+    background-color: #EBE7E7;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+.div-profile-pic {
+    display: flex;
+}
+
+.card-profile-pic p {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.profile-pic {
+    width: 25px;
+
+}
+
+.fila-estadisticas {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    gap: 20px;
+    width: 1300px;
+    margin: 20px 40.400px 20px 40.400px;
+}
+
+.columna-estadisticas {
+    width: 324.5px;
+    display: flex;
+    gap: 20px;
+    height: 100px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.texto-estadisticas {
+    padding-top: 10px;
+
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.texto-estadisticas h3, .texto-estadisticas p {
+    font-weight: 550;
+    margin-bottom: 8px;
+}
+
+.seguidores {
+    display: flex;
+}
+
+.borde-derecho {
+    border-right: 1px solid #e0e0e0;
+
+}
+
+.jhon p {
+    margin: 0px;
+}
+
+.iconos-estadisticas {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.p-numeros {
+    margin-bottom: 8px;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.panel-chef {
+    padding-left: 40px;
+}
+
+.panel-chef h1 ,
+ .panel-chef p {
+    margin-bottom: 20px;
+}
+
+.color-naraja {
+    color: #F79448;
+}
+
 /* Grafico  */
 * {
     box-sizing: border-box;
@@ -642,12 +757,12 @@ ul {
 }
 
 .chart-card {
-    width: 900px;
+    width: 1400px;
     max-width: 100%;
     margin: 0 auto;
     background: #f7f7f7;
     border-radius: 22px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.08);
     padding: 28px 28px 20px;
 }
 
