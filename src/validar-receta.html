@@ -43,9 +43,197 @@
         </header>
 
         <main>
+            <div class="titulo-principal">
+                <h1>Recetas por revisar</h1>
+            </div>
 
+            <div class="contenedor-dos-columnas">
+                
+                <!-- Columna Izquierda: Lista de recetas -->
+                <div class="lista-recetas">
+                    <div class="buscador">
+                        <input type="text" placeholder="Buscar recetas">
+                    </div>
+                    
+                    <div class="tarjetas-lista">
+                        <div class="tarjeta-receta">
+                            <img src="" alt="Pan de calabaza">
+                            <div class="info-tarjeta">
+                                <h3>Pan de calabaza</h3>
+                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tarjeta-receta">
+                            <img src="" alt="Bowl de fideos tailandes">
+                            <div class="info-tarjeta">
+                                <h3>Bowl de fideos tailandes</h3>
+                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-receta">
+                            <img src="" alt="Estofado de ternera">
+                            <div class="info-tarjeta">
+                                <h3>Estofado de ternera</h3>
+                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-receta">
+                            <img src="" alt="Tacos mexicanos">
+                            <div class="info-tarjeta">
+                                <h3>Tacos mexicanos</h3>
+                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Detalles de la receta (Información e ingredientes) -->
+                <div class="detalles-receta">
+                    <div class="seccion-informacion">
+                        <div class="titulo">
+                            <h2>Informacion General</h2>
+                        </div>
+                        <div class="formulario">
+                            <form action="">
+                                <div class="grupo-input">
+                                    <label for="nombre">Nombre de la receta</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fila-inputs">
+                                    <div class="grupo-input">
+                                        <label for="tipo">Tipo</label>
+                                        <select>
+                                            <option value="null">---</option>
+                                        </select>
+                                    </div>
+                                    <div class="grupo-input">
+                                        <label for="dificultad">Dificultad</label>
+                                        <select>
+                                            <option value="null">---</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="grupo-input">
+                                    <label for="tiempo">Tiempo</label>
+                                    <select>
+                                        <option value="null">---</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="seccion-ingredientes">
+                        <div class="titulo">
+                            <h2>Ingredientes</h2>
+                        </div>
+                        <div class="ingrediente1">
+                            <p>200g</p>
+                            <input type="text" value="Fideos de arroz">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <div class="ingrediente2">
+                            <p>300g</p>
+                            <input type="text" value="Camarones">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <div class="ingrediente3" >
+                            <p>2 cda</p>
+                            <input type="text" value="Salsa de soya">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <div class="ingrediente4">
+                            <p>1</p>
+                            <input type="text" value="Jugo de limón">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <div class="ingrediente5">
+                            <p>1</p>
+                            <input type="text" value="Zanahoria rallada">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                        <div class="ingrediente6">
+                            <p>20g</p>
+                            <input type="text" value="Cilantro fresco">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agregar-pasos">
+                <div class="titulo">
+                    <h2>Pasos</h2>
+                </div>
+                <div class="contenedor-pasos">
+                    <div class="paso-1">
+                        <div class="img-paso1">
+                           <img src="" alt=""> 
+                        </div>
+                        <div>
+                            <p>Paso #1</p>
+                            <p>Cocina los fideos de arroz según las instrucciones del paquete.</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 5 min</p>
+                            <div class="acciones-paso">
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paso-2">
+                        <div class="img-paso2">
+                           <img src="" alt=""> 
+                        </div>
+                        <div>
+                            <p>Paso #2</p>
+                            <p>Saltea los camarones en una sartén con un poco de aceite hasta verificar una cocción efectiva.</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                            <div class="acciones-paso">
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paso-3">
+                        <div class="img-paso3">
+                           <img src="" alt=""> 
+                        </div>
+                        <div>
+                            <p>Paso #3</p>
+                            <p>Mezcla las cocciones anteriores con la zanahoria rallada, salsa soya, cilantro y jugo de limón.</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                            <div class="acciones-paso">
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notas-adicionales">
+                <p>Notas adicionales</p>
+                <p>Agrega notas adicionales sobre la preparación de este platillo.</p>
+                <div class="acciones-paso">
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+            <div class="botones">
+                <button type="button" class="btn-aprobar">Aprobar</button>
+                <button type="button" class="btn-solicitar">Solicitar correciones</button>
+                <button type="button" class="btn-rechazar">Rechazar</button>
+            </div>
         </main>
-
+        
         <footer class="footer">
             <div class="footer-contenedor">
                 <div class="footer-logo">
