@@ -7,12 +7,10 @@ header {
     background-color: white;
 }
 
-/* esto es del header */
 .navbar {
     display: flex;
-    /* flex-direction: column; */
     gap: 40px;
-
+    margin: 20px;
 }
 
 .menu {
@@ -349,7 +347,7 @@ ul {
 @media(max-width: 700px) {
     .navbar {
         margin: 10px;
-        display: block;
+        display: flex;
     }
 
     .logo {
@@ -362,10 +360,6 @@ ul {
 
     .menu a {
         display: flex;
-    }
-
-    .nav-icons {
-        margin-top: 20px;
     }
 
     .nosotros-fila {
@@ -574,9 +568,11 @@ ul {
 .fila-acceso-directo {
     margin: 20px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .card-acceso-directo {
     cursor: pointer;
     transition: 0.5s;
@@ -592,10 +588,11 @@ a{
     padding: 13px 10px 10px 10px;
 }
 
-.card-acceso-directo:hover{
+.card-acceso-directo:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 
 }
+
 .col-acceso-directo {
     margin-bottom: 20px;
     display: flex;
@@ -702,7 +699,8 @@ a{
     font-style: normal;
 }
 
-.texto-estadisticas h3, .texto-estadisticas p {
+.texto-estadisticas h3,
+.texto-estadisticas p {
     font-weight: 550;
     margin-bottom: 8px;
 }
@@ -736,8 +734,8 @@ a{
     padding-left: 40px;
 }
 
-.panel-chef h1 ,
- .panel-chef p {
+.panel-chef h1,
+.panel-chef p {
     margin-bottom: 20px;
 }
 

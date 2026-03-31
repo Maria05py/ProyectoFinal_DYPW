@@ -356,15 +356,14 @@ main {
 }
 
 .botones button {
-    padding: 8px 16px;
-    margin-left: 10px;
     margin-top: 30px;
-    border-radius: 8px;
-    border: 1px solid #EBE7E7;
+    margin-left: 15px;
     color: white;
-    font-family: "Jaldi", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
 }
 
