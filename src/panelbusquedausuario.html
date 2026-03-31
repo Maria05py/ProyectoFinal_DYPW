@@ -1,0 +1,314 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/panelbusquedausuario.css">
+    <link rel="stylesheet" href="../css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <title>ChefPad</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="navbar">
+
+                <div class="logo">
+                    <img class="logo" src="../img/logo.jpg" alt="Logo ChefPad">
+                </div>
+
+                <nav class="menu jaldi-regular">
+                    <ul>
+                        <li><a href="landing.html">INICIO</a></li>
+                        <li><a href="#">RECETAS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="">GALERÍA</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-icons">
+                    <a href=""> <i class="fa-solid fa-user" style="color: rgb(99, 96, 91);"></i></a>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="seccion-2">
+        <div class="centrar">
+            <h1 class="jaldi-bold">
+                ¿Qué quieres cocinar hoy?
+            </h1>
+        </div>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" placeholder="Ingresa los ingredientes que tienes disponibles...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"
+                        style="color: rgb(124, 124, 124);"></i></button>
+            </div>
+        </div>
+        <div class="filtros ">
+            <div class="filtro">
+                <i class="fa-solid fa-x fa-2xs" style="color: rgb(124, 124, 124);"></i>
+                <p class="kantumruy-pro">Tomate</p>
+            </div>
+            <div class="filtro">
+                <i class="fa-solid fa-x fa-2xs" style="color: rgb(124, 124, 124);"></i>
+                <p class="kantumruy-pro">Arroz</p>
+            </div>
+            <div class="filtro">
+                <i class="fa-solid fa-x fa-2xs" style="color: rgb(124, 124, 124);"></i>
+                <p class="kantumruy-pro">Pollo</p>
+            </div>
+            <button class="boton-personalizado kantumruy-pro"><i class="fa-solid fa-plus"
+                    style="color: #f79448;"></i>Agregar ingrediente</button>
+        </div>
+        <div class="div-buscar-ingredientes">
+            <button class="buscar-ingredientes kantumruy-pro">
+                Buscar con estos ingredientes
+            </button>
+        </div>
+        <h2 class="centrar inter titulo-seccion-2">Mostrando 24 recetas con tus ingredientes</h2>
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <div>
+                        <h2 class="titulo-filtros inter">Filtros</h2>
+                    </div>
+                    <div class="filters-card">
+                        <form id="filtersForm" class="filters-form">
+                            <div class="filter-group inter">
+                                <label for="maxPrice">Presupuesto máximo</label>
+                                <input type="number" id="maxPrice" name="maxPrice" placeholder="$ 0">
+                            </div>
+
+                            <div class="filter-group inter">
+                                <label for="mealType">Tipo de comida</label>
+                                <select id="mealType" name="mealType">
+                                    <option value="">Todos</option>
+                                    <option value="desayuno">Desayuno</option>
+                                    <option value="almuerzo">Almuerzo</option>
+                                    <option value="cena">Cena</option>
+                                    <option value="postre">Postre</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group inter">
+                                <label for="difficulty">Dificultad</label>
+                                <select id="difficulty" name="difficulty">
+                                    <option value="">Todas</option>
+                                    <option value="facil">Fácil</option>
+                                    <option value="media">Media</option>
+                                    <option value="alta">Alta</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group inter">
+                                <label for="time">Tiempo</label>
+                                <select id="time" name="time">
+                                    <option value="">Cualquiera</option>
+                                    <option value="15">Hasta 15 min</option>
+                                    <option value="30">Hasta 30 min</option>
+                                    <option value="45">Hasta 45 min</option>
+                                    <option value="60">Hasta 60 min</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group inter">
+                                <label for="rating">Calificación mínima</label>
+                                <select id="rating" name="rating">
+                                    <option value="">Todas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-actions inter">
+                                <button class="buscar-ingredientes" type="submit">Aplicar filtros</button>
+                                <button class="buscar-ingredientes" type="reset">Limpiar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/fideostailandes.jpg" alt="Bowl de fideos tailandes" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Bowl de fideos <br> tailandes</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p>35 min</p>
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="recetaVista.html">Ver receta</a>
+                                <a class="buscar-ingredientes" href="recetaPersonalizada.html">Crear versión</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/estofadoternera.jpg" alt="Estofado de ternera" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Estofado de <br> ternera</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p>35 min</p>
+
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="">Ver receta</a>
+                                <a class="buscar-ingredientes" href="">Crear versión</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/pancalabaza.webp" alt="Pan de calabaza" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Pan de <br>
+                                    calabaza</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p> 35 min</p>
+
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="">Ver receta</a>
+                                <a class="buscar-ingredientes" href="">Crear versión</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/carnesesamo.jpg" alt="Carne de sesamo" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Carne de <br>sesamo</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p>35 min</p>
+
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="">Ver receta</a>
+                                <a class="buscar-ingredientes" href="">Crear versión</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/tacosmexicanos.jpg" alt="Tacos mexicanos" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Tacos <br> mexicanos</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p>35 min</p>
+
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="">Ver receta</a>
+                                <a class="buscar-ingredientes" href="">Crear versión</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="receta-vista-busqueda inter">
+                            <img src="../img/salmonconverduras.jpg" alt="Salmón con verduras" class="img-receta">
+                            <div class="card-recetas">
+                                <h3>Salmón con <br>
+                                    verduras</h3>
+                                <p>By Chef Jhon</p>
+                                <div class="flex-icon-receta">
+                                    <i class="fa-regular fa-clock" style="color: rgb(250, 143, 62);"></i>
+                                    <p>35 min</p>
+
+                                </div>
+                                <p>$40</p>
+                                <hr class="receta-card-linea">
+                            </div>
+                            <div class="flex">
+                                <a class="buscar-ingredientes" href="">Ver receta</a>
+                                <a class="buscar-ingredientes" href="">Crear versión</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <div class="logo-circular">
+                    <img src="../img/logo.jpg" alt="Logo de ChefPad ">
+                </div>
+                <div class="footer-navegación">
+                    <h2>Chef Pad</h2>
+                    <nav class="footer-nav">
+                        <a href="landing.html">Inicio</a>
+                        <a href="#">Nosotros</a>
+                        <a href="#">Recetas</a>
+                        <a href="landing.html">Galería</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-contacto">
+                <div class="footer-suscripcion">
+                    <p>Suscríbete para no perderte ninguna noticia!</p>
+                    <input type="email" placeholder=" e-mail">
+                </div>
+                <div class="social-media">
+                    <p>VISITA NUESTRAS REDES SOCIALES!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest" style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divisor">
+        <p class="copyright">Todos los derechos reservados. 2026 ©ChefPad</p>
+    </footer>
+</body>
+
+</html>
