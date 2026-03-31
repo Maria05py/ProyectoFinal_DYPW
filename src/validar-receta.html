@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/validar-receta.css">
-        <title>Validar receta</title>
-    </head>
-    <body class="body">
-        <header>
-            <div class="navbar">
 
-                <div class="logo">
-                    <img class="logo" src="../img/logo.jpg" alt="Logo ChefPad">
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/validar-receta.css">
+    <title>Validar receta</title>
+</head>
 
-                <nav class="menu jaldi-regular">
-                    <ul>
-                        <li><a href="panelbusquedausuario.html">RECETAS</a></li>
-                        <li><a href="#">PLANIFICADOR</a></li>
-                        <li><a href="recetaVista.html#comunidad">COMUNIDAD</a></li>
-                    </ul>
-                </nav>
+<body class="body">
+    <header>
+        <div class="navbar">
 
-                <div class="nav-icons">
-                    <div class="card-profile-pic">
+            <div class="logo">
+                <a href="landing.html"><img class="logo" src="../img/logo.jpg" alt="Logo ChefPad"></a>
+            </div>
+
+            <nav class="menu jaldi-regular">
+                <ul>
+                    <li><a href="panelbusquedausuario.html">RECETAS</a></li>
+                    <li><a href="#">PLANIFICADOR</a></li>
+                    <li><a href="recetaVista.html#comunidad">COMUNIDAD</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="card-profile-pic">
                     <div class="div-profile-pic">
                         <img class="profile-pic" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="">
                     </div>
@@ -40,222 +42,224 @@
                     </div>
                 </div>
             </div>
-        </header>
+    </header>
 
-        <main>
-            <div class="titulo-principal">
-                <h1>Recetas por revisar</h1>
-            </div>
+    <main>
+        <div class="titulo-principal">
+            <h1>Recetas por revisar</h1>
+        </div>
 
-            <div class="contenedor-dos-columnas">
-                
-                <!-- Columna Izquierda: Lista de recetas -->
-                <div class="lista-recetas">
-                    <div class="buscador">
-                        <input type="text" placeholder="Buscar recetas">
+        <div class="contenedor-dos-columnas">
+
+            <!-- Columna Izquierda: Lista de recetas -->
+            <div class="lista-recetas">
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar recetas">
+                </div>
+
+                <div class="tarjetas-lista">
+                    <div class="tarjeta-receta">
+                        <img src="../img/pancalabaza.webp" alt="Pan de calabaza">
+                        <div class="info-tarjeta">
+                            <h3>Pan de calabaza</h3>
+                            <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                        </div>
                     </div>
-                    
-                    <div class="tarjetas-lista">
-                        <div class="tarjeta-receta">
-                            <img src="../img/pancalabaza.webp" alt="Pan de calabaza">
-                            <div class="info-tarjeta">
-                                <h3>Pan de calabaza</h3>
-                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
-                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tarjeta-receta">
-                            <img src="../img/fideostailandes.jpg" alt="Bowl de fideos tailandes">
-                            <div class="info-tarjeta">
-                                <h3>Bowl de fideos tailandes</h3>
-                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
-                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
-                            </div>
-                        </div>
 
-                        <div class="tarjeta-receta">
-                            <img src="../img/estofadoternera.jpg" alt="Estofado de ternera">
-                            <div class="info-tarjeta">
-                                <h3>Estofado de ternera</h3>
-                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
-                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
-                            </div>
+                    <div class="tarjeta-receta">
+                        <img src="../img/fideostailandes.jpg" alt="Bowl de fideos tailandes">
+                        <div class="info-tarjeta">
+                            <h3>Bowl de fideos tailandes</h3>
+                            <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
                         </div>
+                    </div>
 
-                        <div class="tarjeta-receta">
-                            <img src="../img/tacosmexicanos.jpg" alt="Tacos mexicanos">
-                            <div class="info-tarjeta">
-                                <h3>Tacos mexicanos</h3>
-                                <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
-                                <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
-                            </div>
+                    <div class="tarjeta-receta">
+                        <img src="../img/estofadoternera.jpg" alt="Estofado de ternera">
+                        <div class="info-tarjeta">
+                            <h3>Estofado de ternera</h3>
+                            <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-receta">
+                        <img src="../img/tacosmexicanos.jpg" alt="Tacos mexicanos">
+                        <div class="info-tarjeta">
+                            <h3>Tacos mexicanos</h3>
+                            <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
+                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 35 min</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Columna Derecha: Detalles de la receta (Información e ingredientes) -->
-                <div class="detalles-receta">
-                    <div class="seccion-informacion">
-                        <div class="titulo">
-                            <h2>Informacion General</h2>
-                        </div>
-                        <div class="formulario">
-                            <form action="">
+            <!-- Columna Derecha: Detalles de la receta (Información e ingredientes) -->
+            <div class="detalles-receta">
+                <div class="seccion-informacion">
+                    <div class="titulo">
+                        <h2>Informacion General</h2>
+                    </div>
+                    <div class="formulario">
+                        <form action="">
+                            <div class="grupo-input">
+                                <label for="nombre">Nombre de la receta</label>
+                                <input type="text" name="nombre" value="Bowl de fideos tailandés">
+                            </div>
+                            <div class="fila-inputs">
                                 <div class="grupo-input">
-                                    <label for="nombre">Nombre de la receta</label>
-                                    <input type="text" name="nombre" value="Bowl de fideos tailandés">
-                                </div>
-                                <div class="fila-inputs">
-                                    <div class="grupo-input">
-                                        <label for="tipo">Tipo</label>
-                                        <select id="tipo" name="tipo">
-                                            <option value="null">---</option>
-                                            <option value="desayuno">Desayuno</option>
-                                            <option value="almuerzo" selected>Almuerzo / Comida</option>
-                                            <option value="cena">Cena</option>
-                                            <option value="postre">Postre</option>
-                                            <option value="snack">Snack / Botana</option>
-                                            <option value="bebida">Bebida</option>
-                                        </select>
-                                    </div>
-                                    <div class="grupo-input">
-                                        <label for="dificultad">Dificultad</label>
-                                        <select id="dificultad" name="dificultad">
-                                            <option value="null">---</option>
-                                            <option value="facil">Fácil</option>
-                                            <option value="media" selected>Media</option>
-                                            <option value="dificil">Difícil</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="grupo-input">
-                                    <label for="tiempo">Tiempo</label>
-                                    <select id="tiempo" name="tiempo">
+                                    <label for="tipo">Tipo</label>
+                                    <select id="tipo" name="tipo">
                                         <option value="null">---</option>
-                                        <option value="15">15 minutos</option>
-                                        <option value="30">30 minutos</option>
-                                        <option value="45">45 minutos</option>
-                                        <option value="60">1 hora</option>
-                                        <option value="90" selected>1 hora y 30 minutos</option>
-                                        <option value="120">2 horas o más</option>
+                                        <option value="desayuno">Desayuno</option>
+                                        <option value="almuerzo" selected>Almuerzo / Comida</option>
+                                        <option value="cena">Cena</option>
+                                        <option value="postre">Postre</option>
+                                        <option value="snack">Snack / Botana</option>
+                                        <option value="bebida">Bebida</option>
                                     </select>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="seccion-ingredientes">
-                        <div class="titulo">
-                            <h2>Ingredientes</h2>
-                        </div>
-                        <div class="ingrediente">
-                            <p>200g</p>
-                            <input type="text" value="Fideos de arroz">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="ingrediente">
-                            <p>300g</p>
-                            <input type="text" value="Camarones">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="ingrediente" >
-                            <p>2 cda</p>
-                            <input type="text" value="Salsa de soya">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="ingrediente">
-                            <p>1</p>
-                            <input type="text" value="Jugo de limón">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="ingrediente">
-                            <p>1</p>
-                            <input type="text" value="Zanahoria rallada">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="ingrediente">
-                            <p>20g</p>
-                            <input type="text" value="Cilantro fresco">
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="agregar-pasos">
-                <div class="titulo-principal">
-                    <h1>Pasos</h1>
-                </div>
-                <div class="contenedor-pasos">
-                    <div class="paso">
-                        <div class="img-paso">
-                           <img src="../img/paso1fideosarroz.jpg" alt="Fideos de arroz"> 
-                        </div>
-                        <div class="info-paso">
-                            <p class="paso-titulo">Paso #1</p>
-                            <p class="paso-desc">Cocina los fideos de arroz según las instrucciones del paquete.</p>
-                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 5 min</p>
-                            <div class="acciones-paso">
-                                <i class="fa-solid fa-pen"></i>
-                                <i class="fa-solid fa-trash"></i>
+                                <div class="grupo-input">
+                                    <label for="dificultad">Dificultad</label>
+                                    <select id="dificultad" name="dificultad">
+                                        <option value="null">---</option>
+                                        <option value="facil">Fácil</option>
+                                        <option value="media" selected>Media</option>
+                                        <option value="dificil">Difícil</option>
+                                    </select>
+                                </div>
                             </div>
+                            <div class="grupo-input">
+                                <label for="tiempo">Tiempo</label>
+                                <select id="tiempo" name="tiempo">
+                                    <option value="null">---</option>
+                                    <option value="15">15 minutos</option>
+                                    <option value="30">30 minutos</option>
+                                    <option value="45">45 minutos</option>
+                                    <option value="60">1 hora</option>
+                                    <option value="90" selected>1 hora y 30 minutos</option>
+                                    <option value="120">2 horas o más</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="seccion-ingredientes">
+                    <div class="titulo">
+                        <h2>Ingredientes</h2>
+                    </div>
+                    <div class="ingrediente">
+                        <p>200g</p>
+                        <input type="text" value="Fideos de arroz">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="ingrediente">
+                        <p>300g</p>
+                        <input type="text" value="Camarones">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="ingrediente">
+                        <p>2 cda</p>
+                        <input type="text" value="Salsa de soya">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="ingrediente">
+                        <p>1</p>
+                        <input type="text" value="Jugo de limón">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="ingrediente">
+                        <p>1</p>
+                        <input type="text" value="Zanahoria rallada">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="ingrediente">
+                        <p>20g</p>
+                        <input type="text" value="Cilantro fresco">
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="agregar-pasos">
+            <div class="titulo-principal">
+                <h1>Pasos</h1>
+            </div>
+            <div class="contenedor-pasos">
+                <div class="paso">
+                    <div class="img-paso">
+                        <img src="../img/paso1fideosarroz.jpg" alt="Fideos de arroz">
+                    </div>
+                    <div class="info-paso">
+                        <p class="paso-titulo">Paso #1</p>
+                        <p class="paso-desc">Cocina los fideos de arroz según las instrucciones del paquete.</p>
+                        <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 5 min</p>
+                        <div class="acciones-paso">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </div>
                     </div>
-                    <div class="paso">
-                        <div class="img-paso">
-                           <img src="../img/paso2-camarones.jpeg" alt="Camarones"> 
-                        </div>
-                        <div class="info-paso">
-                            <p class="paso-titulo">Paso #2</p>
-                            <p class="paso-desc">Saltea los camarones en una sartén con un poco de aceite hasta verificar una cocción efectiva.</p>
-                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
-                            <div class="acciones-paso">
-                                <i class="fa-solid fa-pen"></i>
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
+                </div>
+                <div class="paso">
+                    <div class="img-paso">
+                        <img src="../img/paso2-camarones.jpeg" alt="Camarones">
+                    </div>
+                    <div class="info-paso">
+                        <p class="paso-titulo">Paso #2</p>
+                        <p class="paso-desc">Saltea los camarones en una sartén con un poco de aceite hasta verificar
+                            una cocción efectiva.</p>
+                        <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                        <div class="acciones-paso">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </div>
                     </div>
-                    <div class="paso">
-                        <div class="img-paso">
-                           <img src="../img/paso3-mezcla.jpeg" alt="Mezcla"> 
-                        </div>
-                        <div class="info-paso">
-                            <p class="paso-titulo">Paso #3</p>
-                            <p class="paso-desc">Mezcla las cocciones anteriores con la zanahoria rallada, salsa soya, cilantro y jugo de limón.</p>
-                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
-                            <div class="acciones-paso">
-                                <i class="fa-solid fa-pen"></i>
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
+                </div>
+                <div class="paso">
+                    <div class="img-paso">
+                        <img src="../img/paso3-mezcla.jpeg" alt="Mezcla">
+                    </div>
+                    <div class="info-paso">
+                        <p class="paso-titulo">Paso #3</p>
+                        <p class="paso-desc">Mezcla las cocciones anteriores con la zanahoria rallada, salsa soya,
+                            cilantro y jugo de limón.</p>
+                        <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                        <div class="acciones-paso">
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="notas-adicionales">
-                <p class="nota-titulo">Notas adicionales</p>
-                <p class="nota-desc">Agrega notas adicionales sobre la preparación de este platillo.</p>
-                <div class="acciones-paso">
-                    <i class="fa-solid fa-pen"></i>
-                    <i class="fa-solid fa-trash"></i>
+        <div class="notas-adicionales">
+            <p class="nota-titulo">Notas adicionales</p>
+            <p class="nota-desc">Agrega notas adicionales sobre la preparación de este platillo.</p>
+            <div class="acciones-paso">
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="botones">
+            <button type="button" class="btn-aprobar">Aprobar</button>
+            <button type="button" class="btn-solicitar">Solicitar correciones</button>
+            <button type="button" class="btn-rechazar">Rechazar</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <div class="logo-circular">
+                    <a href=""><img src="../img/logo.jpg" alt="Logo de ChefPad "></a>
                 </div>
-            </div>
-
-            <div class="botones">
-                <button type="button" class="btn-aprobar">Aprobar</button>
-                <button type="button" class="btn-solicitar">Solicitar correciones</button>
-                <button type="button" class="btn-rechazar">Rechazar</button>
-            </div>
-        </main>
-        
-        <footer class="footer">
-            <div class="footer-contenedor">
-                <div class="footer-logo">
-                    <div class="logo-circular">
-                        <img src="../img/logo.jpg" alt="Logo de ChefPad ">
-                    </div>
-                    <div class="footer-navegación">
+                <div class="footer-navegación">
                     <h2>Chef Pad</h2>
                     <nav class="footer-nav">
                         <a href="landing.html#inicio">Inicio</a>
@@ -274,11 +278,16 @@
                 <div class="social-media">
                     <p>VISITA NUESTRAS REDES SOCIALES!</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest" style="color: rgb(255, 255, 255);"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="instagram.com"><i class="fa-brands fa-instagram"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="facebook.com"><i class="fa-brands fa-facebook"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="linkedin.com"><i class="fa-brands fa-linkedin"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="pinterest.com"><i class="fa-brands fa-pinterest"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                        <a href="youtube.com"><i class="fa-brands fa-youtube"
+                                style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                 </div>
             </div>
@@ -287,5 +296,6 @@
         <hr class="footer-divisor">
         <p class="copyright">Todos los derechos reservados. 2026 ©ChefPad</p>
     </footer>
-    </body>
+</body>
+
 </html>
