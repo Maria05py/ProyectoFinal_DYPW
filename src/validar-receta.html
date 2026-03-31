@@ -57,7 +57,7 @@
                     
                     <div class="tarjetas-lista">
                         <div class="tarjeta-receta">
-                            <img src="" alt="Pan de calabaza">
+                            <img src="../img/pancalabaza.webp" alt="Pan de calabaza">
                             <div class="info-tarjeta">
                                 <h3>Pan de calabaza</h3>
                                 <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
@@ -66,7 +66,7 @@
                         </div>
                         
                         <div class="tarjeta-receta">
-                            <img src="" alt="Bowl de fideos tailandes">
+                            <img src="../img/fideostailandes.jpg" alt="Bowl de fideos tailandes">
                             <div class="info-tarjeta">
                                 <h3>Bowl de fideos tailandes</h3>
                                 <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="tarjeta-receta">
-                            <img src="" alt="Estofado de ternera">
+                            <img src="../img/estofadoternera.jpg" alt="Estofado de ternera">
                             <div class="info-tarjeta">
                                 <h3>Estofado de ternera</h3>
                                 <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="tarjeta-receta">
-                            <img src="" alt="Tacos mexicanos">
+                            <img src="../img/tacosmexicanos.jpg" alt="Tacos mexicanos">
                             <div class="info-tarjeta">
                                 <h3>Tacos mexicanos</h3>
                                 <p><i class="fa-solid fa-circle" style="color: #ff8c00;"></i> $ 40 por porción</p>
@@ -104,26 +104,41 @@
                             <form action="">
                                 <div class="grupo-input">
                                     <label for="nombre">Nombre de la receta</label>
-                                    <input type="text">
+                                    <input type="text" name="nombre" value="Bowl de fideos tailandés">
                                 </div>
                                 <div class="fila-inputs">
                                     <div class="grupo-input">
                                         <label for="tipo">Tipo</label>
-                                        <select>
+                                        <select id="tipo" name="tipo">
                                             <option value="null">---</option>
+                                            <option value="desayuno">Desayuno</option>
+                                            <option value="almuerzo" selected>Almuerzo / Comida</option>
+                                            <option value="cena">Cena</option>
+                                            <option value="postre">Postre</option>
+                                            <option value="snack">Snack / Botana</option>
+                                            <option value="bebida">Bebida</option>
                                         </select>
                                     </div>
                                     <div class="grupo-input">
                                         <label for="dificultad">Dificultad</label>
-                                        <select>
+                                        <select id="dificultad" name="dificultad">
                                             <option value="null">---</option>
+                                            <option value="facil">Fácil</option>
+                                            <option value="media" selected>Media</option>
+                                            <option value="dificil">Difícil</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="grupo-input">
                                     <label for="tiempo">Tiempo</label>
-                                    <select>
+                                    <select id="tiempo" name="tiempo">
                                         <option value="null">---</option>
+                                        <option value="15">15 minutos</option>
+                                        <option value="30">30 minutos</option>
+                                        <option value="45">45 minutos</option>
+                                        <option value="60">1 hora</option>
+                                        <option value="90" selected>1 hora y 30 minutos</option>
+                                        <option value="120">2 horas o más</option>
                                     </select>
                                 </div>
                             </form>
@@ -134,32 +149,32 @@
                         <div class="titulo">
                             <h2>Ingredientes</h2>
                         </div>
-                        <div class="ingrediente1">
+                        <div class="ingrediente">
                             <p>200g</p>
                             <input type="text" value="Fideos de arroz">
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <div class="ingrediente2">
+                        <div class="ingrediente">
                             <p>300g</p>
                             <input type="text" value="Camarones">
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <div class="ingrediente3" >
+                        <div class="ingrediente" >
                             <p>2 cda</p>
                             <input type="text" value="Salsa de soya">
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <div class="ingrediente4">
+                        <div class="ingrediente">
                             <p>1</p>
                             <input type="text" value="Jugo de limón">
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <div class="ingrediente5">
+                        <div class="ingrediente">
                             <p>1</p>
                             <input type="text" value="Zanahoria rallada">
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <div class="ingrediente6">
+                        <div class="ingrediente">
                             <p>20g</p>
                             <input type="text" value="Cilantro fresco">
                             <i class="fa-solid fa-pen"></i>
@@ -169,46 +184,46 @@
             </div>
 
             <div class="agregar-pasos">
-                <div class="titulo">
-                    <h2>Pasos</h2>
+                <div class="titulo-principal">
+                    <h1>Pasos</h1>
                 </div>
                 <div class="contenedor-pasos">
-                    <div class="paso-1">
-                        <div class="img-paso1">
-                           <img src="" alt=""> 
+                    <div class="paso">
+                        <div class="img-paso">
+                           <img src="../img/paso1fideosarroz.jpg" alt="Fideos de arroz"> 
                         </div>
-                        <div>
-                            <p>Paso #1</p>
-                            <p>Cocina los fideos de arroz según las instrucciones del paquete.</p>
-                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 5 min</p>
+                        <div class="info-paso">
+                            <p class="paso-titulo">Paso #1</p>
+                            <p class="paso-desc">Cocina los fideos de arroz según las instrucciones del paquete.</p>
+                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 5 min</p>
                             <div class="acciones-paso">
                                 <i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="paso-2">
-                        <div class="img-paso2">
-                           <img src="" alt=""> 
+                    <div class="paso">
+                        <div class="img-paso">
+                           <img src="../img/paso2-camarones.jpeg" alt="Camarones"> 
                         </div>
-                        <div>
-                            <p>Paso #2</p>
-                            <p>Saltea los camarones en una sartén con un poco de aceite hasta verificar una cocción efectiva.</p>
-                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                        <div class="info-paso">
+                            <p class="paso-titulo">Paso #2</p>
+                            <p class="paso-desc">Saltea los camarones en una sartén con un poco de aceite hasta verificar una cocción efectiva.</p>
+                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
                             <div class="acciones-paso">
                                 <i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="paso-3">
-                        <div class="img-paso3">
-                           <img src="" alt=""> 
+                    <div class="paso">
+                        <div class="img-paso">
+                           <img src="../img/paso3-mezcla.jpeg" alt="Mezcla"> 
                         </div>
-                        <div>
-                            <p>Paso #3</p>
-                            <p>Mezcla las cocciones anteriores con la zanahoria rallada, salsa soya, cilantro y jugo de limón.</p>
-                            <p><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
+                        <div class="info-paso">
+                            <p class="paso-titulo">Paso #3</p>
+                            <p class="paso-desc">Mezcla las cocciones anteriores con la zanahoria rallada, salsa soya, cilantro y jugo de limón.</p>
+                            <p class="paso-tiempo"><i class="fa-regular fa-clock" style="color: #ff8c00;"></i> 3 min</p>
                             <div class="acciones-paso">
                                 <i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i>
@@ -219,8 +234,8 @@
             </div>
 
             <div class="notas-adicionales">
-                <p>Notas adicionales</p>
-                <p>Agrega notas adicionales sobre la preparación de este platillo.</p>
+                <p class="nota-titulo">Notas adicionales</p>
+                <p class="nota-desc">Agrega notas adicionales sobre la preparación de este platillo.</p>
                 <div class="acciones-paso">
                     <i class="fa-solid fa-pen"></i>
                     <i class="fa-solid fa-trash"></i>

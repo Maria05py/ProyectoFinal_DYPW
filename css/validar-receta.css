@@ -10,8 +10,16 @@ body {
 
 .body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Jaldi", sans-serif;
     color: #5f5b57;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Jaldi", sans-serif;
+    font-weight: 700;
+    color: #63605B;
 }
 
 a {
@@ -113,11 +121,271 @@ ul {
 }
 
 /* =========================================
+   MAIN
+   ========================================= */
+
+main {
+    background-color: #FBFBFB;
+    padding: 20px;
+}
+
+.titulo-principal {
+    padding: 20px;
+}
+
+.contenedor-dos-columnas {
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #EBE7E7;
+}
+
+.lista-recetas {
+    border-right: 1px solid #EBE7E7;
+    padding-right: 20px;
+}
+
+.detalles-receta {
+    padding-left: 10px;
+}
+
+.buscador {
+    padding: 10px;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #EBE7E7;
+}
+
+.tarjetas-lista {
+    padding: 10px;
+}
+
+.tarjeta-receta {
+    padding: 0;
+    margin-bottom: 15px;
+    border: 1px solid #EBE7E7;
+    border-radius: 20px;
+    display: flex;
+}
+
+.tarjeta-receta img {
+    width: 150px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.info-tarjeta {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-tarjeta h3 {
+    margin-bottom: 10px;
+    color: #63605B;
+    font-size: 18px;
+}
+
+.info-tarjeta p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+.detalles-receta {
+    padding: 10px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.grupo-input input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #EBE7E7;
+}
+
+.grupo-input select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #EBE7E7;
+}
+
+.seccion-ingredientes .titulo {
+    margin-top: 20px;
+}
+
+.ingrediente {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingrediente p {
+    width: 60px;
+    margin-right: 10px;
+    text-align: right;
+    color: #5f5b57;
+    font-size: 14px;
+}
+
+.ingrediente input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #EBE7E7;
+    background-color: #F6F6F6;
+    color: #5f5b57;
+    height: 35px;
+}
+
+.ingrediente i {
+    padding: 0 15px;
+    background-color: #EBE7E7;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    color: #5f5b57;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.agregar-pasos {
+    margin-top: 20px;
+}
+
+.paso {
+    background-color: #FFFFFF;
+    padding: 0;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.img-paso img {
+    width: 220px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.info-paso {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.paso-titulo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #63605B;
+    margin-bottom: 5px;
+}
+
+.paso-desc {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #5f5b57;
+    margin-bottom: 10px;
+}
+
+.paso-tiempo {
+    font-size: 14px;
+    color: #888;
+}
+
+.acciones-paso {
+    display: flex;
+    align-self: flex-end;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+.acciones-paso i {
+    padding: 8px 12px;
+    margin: 0;
+    color: #5f5b57;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.notas-adicionales {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nota-titulo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #63605B;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.nota-desc {
+    font-size: 16px;
+    color: #5f5b57;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.botones {
+    display: flex;
+    justify-content: end;
+}
+
+.botones button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #EBE7E7;
+    color: white;
+    font-family: "Jaldi", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-aprobar {
+    background-color: grey;
+}
+
+.btn-solicitar {
+    background-color: #ff8c00;
+}
+
+.btn-rechazar {
+    background-color: red
+}
+
+/* =========================================
    FOOTER STYLES
    ========================================= */
 .footer {
     background-color: #63605B;
-    margin-top: 40px;
+    margin-top: 0;
     padding: 20px;
     font-family: "Jaldi", sans-serif;
 }
