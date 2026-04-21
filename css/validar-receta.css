@@ -56,9 +56,6 @@ a {
    HEADER STYLES
    ========================================= */
 
-header {
-    padding: 10px 30px;
-}
 
 .navbar {
     display: flex;
