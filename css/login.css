@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* CONTENEDOR */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* TARJETA */
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* TITULO */
+.auth-card h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+/* BOTON (igual que tu UI) */
+.btn-main {
+    width: 100%;
+    padding: 12px;
+    background: #f97316;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-main:hover {
+    background: #ea580c;
+}
+
+/* ERROR */
+.error {
+    border: 2px solid red;
+}
+
+/* TEXTO ABAJO */
+.auth-switch {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-switch a {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+}
