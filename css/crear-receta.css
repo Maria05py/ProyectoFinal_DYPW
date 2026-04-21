@@ -8,6 +8,7 @@
     margin: 0;
     font-family: Arial, sans-serif;
     color: #5f5b57;
+    overflow-x: hidden;
 }
 
 a {
@@ -40,9 +41,6 @@ a {
    HEADER STYLES
    ========================================= */
 
-header {
-    padding: 10px 30px;
-}
 
 .navbar {
     display: flex;
