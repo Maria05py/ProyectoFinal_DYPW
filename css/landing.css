@@ -11,15 +11,15 @@ header {
     display: flex;
     gap: 40px;
     margin: 20px;
+    align-items: center;
 }
 
 .menu {
     display: flex;
-    margin-left: 780px;
+    margin-left: auto;
     justify-content: center;
     align-items: center;
     font-size: 22px;
-
 }
 
 .menu a {
@@ -346,28 +346,28 @@ ul {
 
 @media(max-width: 1024px) {
 
-    .jaldi-regular{
+    .jaldi-regular {
         gap: 0px;
         margin: 0px;
         padding-left: 150px;
     }
 
-    .nav-icons{
+    .nav-icons {
         margin: 0px;
         padding-left: 70px;
     }
 
-    .nosotros-fila{
+    .nosotros-fila {
         padding: 20px;
         gap: 10px;
     }
 
-    .galeria-card{
+    .galeria-card {
         padding: 10px;
     }
 
-    .fila{
-        gap:20px;
+    .fila {
+        gap: 20px;
     }
 }
 
@@ -929,11 +929,14 @@ a {
 }
 
 .galeria-item.activa img {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-radius: 20px;
 }
 
+.galeria-item p {
+    transition: transform 0.3s ease;
+}
+
 .galeria-item.activa p {
-    transform: scale(1.1);
-    padding-top: 20px;
+    transform: scale(1.05);
 }
