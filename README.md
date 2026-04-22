@@ -68,24 +68,23 @@ El proyecto actual abarca la maquetación funcional y la estructura de navegaci�
 
 ---
 
-## 📂 Estructura de Archivos
+## Estructura de Archivos
 
-El proyecto sigue una organización clara dentro de la carpeta raíz y el directorio `src`:
-
+```text
 /
 ├── README.md           # Documentación general del proyecto
 ├── css/                # Hojas de estilo (Diseño visual y responsive)
-├── docs/               # Documentación con el diseño de alta fidelidad realizado en figma
-├── img/                # Imagenes del sitio web
+├── docs/               # Documentación con el diseño de alta fidelidad realizado en Figma
+├── img/                # Imágenes del sitio web
 ├── js/                 # Lógica de navegación y scripts de componentes
-│   │   ├── edicionReceta.js         # Acciones de la edición de la receta
-│   │   ├── landing.js               # Acciones realizadas en el landing
-│   │   └── login.js                 # Acciones realizadas en el landing
-│   │	  └── singup.js                # Acciones realizadas en el inicio de sesión
+│   ├── edicionReceta.js  # Acciones de la edición de la receta
+│   ├── landing.js        # Acciones realizadas en el landing
+│   ├── login.js          # Acciones realizadas en el login
+│   └── signup.js         # Acciones realizadas en el registro
 ├── src/                # Código HTML de las diversas pantallas
 ├── Tipografía/         # Tipografía del sitio web
-└── 
-
+└── ...
+```
 ---
 ## Estructura de Navegación
 
