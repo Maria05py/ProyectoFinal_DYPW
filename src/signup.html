@@ -1,141 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Crear cuenta | ChefPad</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/signup.css">
-
-    <!-- ICONOS -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
-<main>
-
-    <!-- TÍTULO -->
-    <h2 class="titulo-form">Crear cuenta</h2>
-
-    <!-- FORMULARIO -->
-    <form class="formulario" id="formulario">
-
-        <!-- USUARIO -->
-        <div class="formulario__grupo" id="grupo__usuario">
-            <label class="formulario__label">Nombre de usuario</label>
-
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ej: chef123" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+    <main>
+        <h2 class="titulo-form">Crear cuenta</h2>
+        <form class="formulario" id="formulario">
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label class="formulario__label">Nombre de usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ej: chef123"
+                        required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    4-16 caracteres. Letras, números, guión o guión bajo.
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                4-16 caracteres. Letras, números, guión o guión bajo.
-            </p>
-        </div>
-
-        <!-- NOMBRE -->
-        <div class="formulario__grupo" id="grupo__nombre">
-            <label class="formulario__label">Nombre completo</label>
-
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Pérez" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label">Nombre completo</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Pérez"
+                        required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Mínimo 3 caracteres. Solo letras y espacios.
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                Mínimo 3 caracteres. Solo letras y espacios.
-            </p>
-        </div>
-
-        <!-- PASSWORD -->
-        <div class="formulario__grupo" id="grupo__password">
-            <label class="formulario__label">Contraseña</label>
-
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+            <div class="formulario__grupo" id="grupo__password">
+                <label class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password" required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Entre 4 y 12 caracteres.
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                Entre 4 y 12 caracteres.
-            </p>
-        </div>
-
-        <!-- CONFIRMAR PASSWORD -->
-        <div class="formulario__grupo" id="grupo__password2">
-            <label class="formulario__label">Confirmar contraseña</label>
-
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+            <div class="formulario__grupo" id="grupo__password2">
+                <label class="formulario__label">Confirmar contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Las contraseñas deben coincidir.
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                Las contraseñas deben coincidir.
-            </p>
-        </div>
-
-        <!-- EMAIL -->
-        <div class="formulario__grupo" id="grupo__correo">
-            <label class="formulario__label">Correo electrónico</label>
-
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@email.com" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="formulario__label">Correo electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@email.com" required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Debe ser un correo válido.
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                Debe ser un correo válido.
-            </p>
-        </div>
-
-        <!-- TELÉFONO -->
-        <div class="formulario__grupo" id="grupo__telefono">
-            <label class="formulario__label">Teléfono</label>
-
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="88888888" required>
-                <i class="formulario__validacion-estado bx bx-x-circle"></i>
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="88888888"
+                        required>
+                    <i class="formulario__validacion-estado bx bx-x-circle"></i>
+                </div>
+                <p class="formulario__input-error">
+                    Solo números (8 a 11 dígitos).
+                </p>
             </div>
-
-            <p class="formulario__input-error">
-                Solo números (8 a 11 dígitos).
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label>
+                    <input type="checkbox" class="formulario__checkbox" id="terminos" required>
+                    Acepto los términos y condiciones
+                </label>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation" style="color: rgb(255, 255, 255);"></i> Debes completar
+                    todos los campos correctamente.</p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                    <i class="fa-regular fa-circle-check" style="color: rgb(46, 204, 113);"></i> Cuenta creada
+                    exitosamente
+                </p>
+                <input type="submit" class="formulario__btn" value="Crear cuenta">
+            </div>
+        </form>
+        <div class="flex">
+            <p>
+                ¿Ya tiene una cuenta?
+                <a href="login.html">Iniciar sesión</a>
             </p>
         </div>
-
-        <!-- TERMINOS -->
-        <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
-            <label>
-                <input type="checkbox" class="formulario__checkbox" id="terminos" required>
-                Acepto los términos y condiciones
-            </label>
-        </div>
-
-        <!-- MENSAJE ERROR -->
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fa-solid fa-triangle-exclamation" style="color: rgb(255, 255, 255);"></i> Debes completar todos los campos correctamente.</p>
-        </div>
-
-        <!-- BOTÓN -->
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
-                <i class="fa-regular fa-circle-check" style="color: rgb(46, 204, 113);"></i> Cuenta creada exitosamente
-            </p>
-
-            <input type="submit" class="formulario__btn" value="Crear cuenta">
-        </div>
-
-    </form>
-
-</main>
-
-<!-- JS -->
-<script src="../js/signup.js"></script>
-
+    </main>
+    <script src="../js/signup.js"></script>
 </body>
+
 </html>
