@@ -30,7 +30,7 @@ header {
 .nav-icons {
     margin-right: 40px;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -204,6 +204,7 @@ ul {
     font-family: "Jaldi", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin: auto;
 }
 
 .jaldi-bold {
@@ -286,6 +287,13 @@ ul {
     padding: 0px;
 }
 
+#mensaje {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
 .footer-suscripcion p {
     color: white;
     font-size: 20px;
@@ -309,7 +317,7 @@ ul {
 
 .social-media {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 0px;
 }
 
@@ -346,19 +354,19 @@ ul {
 
 @media(max-width: 1024px) {
 
-    .jaldi-regular {
+    .menu {
         gap: 0px;
-        margin: 0px;
-        padding-left: 150px;
+        padding-left: 0px;
+        margin-left: 80px;
     }
 
     .nav-icons {
         margin: 0px;
-        padding-left: 70px;
+        padding-left: 150px;
     }
 
     .nosotros-fila {
-        padding: 20px;
+        padding: 30px;
         gap: 10px;
     }
 
@@ -372,98 +380,114 @@ ul {
 }
 
 @media(max-width: 768px) {
+
     .navbar {
-        margin: 10px;
-        display: flex;
+        gap: 0px;
     }
 
-    .logo {
-        width: 100px;
-    }
-
-    .menu {
-        padding: 0px;
-    }
-
-    .menu a {
-        display: flex;
-    }
-
-    .nosotros-fila {
-        display: block;
-        width: 100%;
-    }
-
-    .nosotros-card {
-        width: 100%;
-        padding: 10px;
-        margin-left: 40px;
-    }
-
-    .nosotros-col img {
-        display: none;
-    }
-
-    .div-galeria {
-        margin-top: 50px;
-    }
-
-    .galeria-card {
-        margin-top: 0px;
-        padding: 20px;
-    }
-
-    .galeria-card h2 {
-        margin-bottom: 20px;
-    }
-
-    .fila {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-
-    .columna {
-        display: contents;
-    }
-
-    .columna img {
-        width: 100%;
-        border-radius: 15px;
+    .nav-icons {
+        padding-left: 0px;
     }
 
     .footer-contenedor {
-        display: grid;
         grid-template-columns: 55% 45%;
-        padding-bottom: 0px;
+    }
+
+    .nosotros-col img {
+        margin-left: 130px;
+    }
+
+    .footer-navegación {
+        margin-left: 40px;
+    }
+
+    .nosotros-fila {
+        display: grid;
+        gap: 40px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .navbar {
+        margin: 10px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .menu {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .nav-icons {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .banner {
+        width: 500px;
+    }
+
+    ul {
+        gap: 20px
+    }
+
+    .contanedor {
+        width: 500px;
+    }
+
+    .nosotros-col img {
+        margin: 0px;
+        margin-left: 60px;
+    }
+
+    .div-galeria {
+        margin-top: 80px;
+        width: 500px;
+    }
+
+    .fila {
+        display: grid;
+    }
+
+    .footer {
+        width: 500px;
+        margin: 0px;
     }
 
     .footer-logo {
-        gap: 30px;
+        gap: 15%;
     }
 
     .logo-circular {
         padding-left: 0px;
     }
 
+    .footer-contacto {
+        padding: 0px;
+    }
+
     .logo-circular img {
-        margin-left: 0px;
-        width: 100px;
-    }
-
-    .footer-navegación {
-        padding-left: 30px;
-    }
-
-    .footer-suscripcion input {
         width: 100%;
     }
 
-    .footer-divisor {
-        width: 90%;
+    .footer-contenedor {
+        grid-template-columns: 55% 45%;
     }
+
+    .footer-navegación {
+        margin-left: 20px;
+    }
+
+    .footer-navegación h2 {
+        font-size: 24px;
+    }
+
 }
+
 
 /* Chef panel */
 .chef-db {
