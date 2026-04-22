@@ -94,7 +94,7 @@ El menú superior es el eje central de la plataforma y es accesible desde cualqu
 - **Recetas:** Vincula directamente al archivo `panelbusquedausuario.html`, que es el centro de búsqueda y filtrado de contenido culinario.
 - **Blog:** Actualmente funciona como un marcador de posición (*placeholder*), ya que no se ha definido contenido específico para esta sección en la etapa actual.
 - **Galería:** Dirige al usuario a la sección inferior del landing donde se despliega un catálogo visual de imágenes de recetas.
-- **Icono de Usuario:** En esta versión, funciona como el acceso directo al Panel de Gestión del Chef, supliendo temporalmente la función de un login completo.
+- **Icono de Usuario:** En esta versión, funciona como el acceso directo al login simulado.
 
 ---
 
