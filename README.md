@@ -128,6 +128,66 @@ El pie de página refuerza la estructura jerárquica y ofrece accesos adicionale
 - **Botón "Explorar":** Ubicado de forma prominente en el banner principal del 
 
 ---
+## Cómo ejecutar / abrir el proyecto
+
+### 1. Clonar el repositorio desde GitHub
+```bash
+git clone https://github.com/Maria05py/ProyectoFinal_DYPW.git
+```
+
+### 2. Ingresar a la carpeta del proyecto
+```bash
+cd ProyectoFinal_DYPW
+```
+
+### 3. Abrir el proyecto
+Abrir el archivo `index.html` en el navegador, o abrir la carpeta en **Visual Studio Code** y usar **Live Server**.
+
+---
+
+##  Archivos JavaScript
+
+### `edicionReceta.js`
+- Permite crear nuevos pasos dinámicamente en una receta
+- Genera elementos HTML con contenido predeterminado
+- Permite eliminar pasos con doble clic
+- Renumera automáticamente los pasos después de eliminar uno
+- Maneja eventos de interacción con botones
+
+### `landing.js`
+- Aplica efectos visuales a elementos de galería (hover)
+- Agrega y elimina clases CSS dinámicamente
+- Valida correos electrónicos usando expresiones regulares
+- Muestra mensajes de error o éxito al usuario
+
+###  `login.js`
+- Valida campos de usuario y contraseña
+- Evita envío del formulario si hay campos vacíos
+- Verifica credenciales predefinidas
+- Muestra alertas de acceso correcto o error
+- Redirige al usuario al panel de gestión si el login es exitoso
+
+###  `signup.js`
+- Valida múltiples campos del formulario (usuario, nombre, contraseña, correo, teléfono)
+- Usa expresiones regulares para validar formato de datos
+- Verifica coincidencia de contraseñas
+- Muestra retroalimentación visual (correcto/incorrecto)
+- Controla el envío del formulario según validaciones
+- Muestra mensajes de éxito o error
+
+---
+
+##  Eventos utilizados
+
+| Evento | Uso |
+|---|---|
+| `click` | Interacción con botones |
+| `dblclick` | Eliminar pasos en recetas |
+| `submit` | Controlar envío de formularios |
+| `blur` | Validación al salir de un campo |
+| `keyup` | Validación en tiempo real |
+| `mouseenter` | Activar efectos visuales |
+| `mouseleave` | Quitar efectos visuales |
 
 ## Estrategia de ramas y commits
 
